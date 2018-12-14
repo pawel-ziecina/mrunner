@@ -108,6 +108,7 @@ def _load_py_experiment_and_generate_neptune_yamls(script, spec, *, neptune_dir,
                 NEPTUNE_LOCAL_VERSION, neptune_version
             ))
         NeptuneConfigFile = {'1': NeptuneConfigFileV1, '2': NeptuneConfigFileV2}[str(NEPTUNE_LOCAL_VERSION.version[0])]
+        LOGGER.debug('Locally using neptune v{}'.format(NEPTUNE_LOCAL_VERSION))
 
     def _dump_to_neptune(cli_params, neptune_dir):
         neptune_path = None

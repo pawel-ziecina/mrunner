@@ -1,13 +1,13 @@
-mrunner is tested on python2.7 and python3.5, but newer versions
-of python3 shall also work.
+mrunner shall work on both python2 and python3.
 Additionally we recommend to install and use mrunner in
 [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/).
 
 1. To install it use following commands:
 
    ```shell
-   pip install neptune-cli==1.6
-   pip install git+ssh://git@pascal-tower01.intra.codilime.com/ml-robotics/mrunner.git@develop
+   pip install neptune-cli
+   pip install git+https://github.com/deepsense-ai/mrunner.git
+   pip install git+https://github.com/deepsense-ai/mrunner.git@v0.2.1  # for specific version
    ```
 
    Above sequence is related with neptune
